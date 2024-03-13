@@ -1,0 +1,359 @@
+/* Estilo general */
+body {
+  background-image: url('FondoVentas.jpg');
+  background-size: cover;
+  color: white;
+  text-align: justify;
+  border: 5%;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+}
+#logo {
+  width: 60%;
+  position: absolute; /* Añadimos posición absoluta */
+  left: 20px; /* Ajustamos la posición izquierda */
+  z-index: 1; /* Aseguramos que el logo esté sobre otros elementos */
+}
+#contenedorGordo{
+  margin-top: 5%;
+}
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073b7;
+  }
+  
+  /* Encabezado */
+  header {
+    margin-left: 1%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Añadimos posición relativa */
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+    text-align: justify;
+    margin-top: 100px; /* Ajusta el margen superior según sea necesario */
+    margin-left: 20%; /* Aumentamos el margen izquierdo para desplazar más el contenido hacia la derecha */
+    width: 80%; /* Ajusta el ancho del contenido principal */
+  }
+  #fotopubli{
+    margin-left: 300px;
+    margin-top: -350px;
+  }
+  .descripcion {
+    margin-bottom: 20px;
+  }
+  
+  .como-jugar {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .categorias {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categorias li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Pie de página */
+  footer {
+    padding: 10px;
+    text-align: center;
+    margin-top: 70%; /* Ajusta según sea necesario */
+    margin-left: -50%;
+    margin-right: auto;
+    width: fit-content; /* Ajusta el ancho al contenido */
+  }
+  
+  footer a {
+    margin-right: 10px;
+  }
+/* Estilos para las imágenes después de las reseñas */
+.imagenes-despues-de-resenas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imagen-lateral,
+.imagen-central {
+  flex: 1;
+  margin: 10px; /* Espacio entre las imágenes */
+}
+
+.imagenes-despues-de-resenas img {
+  width: 100%; /* Hacer que todas las imágenes tengan el mismo ancho */
+  height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilos para las reseñas */
+.reseñas {
+  margin-top: 20px; /* Agrega un margen superior para separar las reseñas de las imágenes */
+} 
+
+.download-btn {
+  background-color: #0d4455; 
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border:2px solid black;
+}
+
+.imagenes-despues-de-resenas img {
+  width: 100%; /* Hacer que todas las imágenes tengan el mismo ancho */
+  height: auto; /* Mantener la proporción de aspecto */
+}
+  /* Rating del juego*/
+/* Configuración del modelo de caja para todos los elementos del cuerpo */
+body * {
+    box-sizing: border-box;
+}
+
+/* Estilos del contenedor de las estrellas de calificación */
+.rating-stars {
+  display: block;
+  width: 50vmin;
+  padding: 1.75vmin 10vmin 2vmin 3vmin;
+  background: linear-gradient(90deg, #ffffff90 40vmin, #fff0 40vmin 100%);
+  border-radius: 5vmin;
+  position: relative;
+}
+
+/* Estilos del contador de calificación */
+.rating-counter {
+  font-size: 5.5vmin;
+    font-family: Arial, Helvetica, serif;
+    color: #9aacc6;
+    width: 10vmin;
+    text-align: center;
+    background: #0006;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 0 5vmin 5vmin 0;
+    line-height: 10vmin;
+}
+
+/* Contenido inicial del contador de calificación */
+.rating-counter:before {
+  content: "0";
+  transition: all 0.25s ease 0s;	
+}
+
+/* Oculta los inputs */
+input { display: none; }
+
+/* Estilos de las estrellas de calificación */
+label {
+  width: 5vmin;
+  height: 5vmin;
+  background: #000b;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.5vmin 0.65vmin;
+  transition: all 1s ease 0s;	
+  clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+}
+
+/* Oculta la primera estrella */
+label[for=rs0] {
+  display: none;
+}
+
+/* Estilos de las estrellas antes de ser seleccionadas */
+label:before {
+  width: 90%;
+  height: 90%;
+  content: "";
+  background: orange;
+  z-index: -1;
+  display: block;
+  margin-left: 5%;
+  margin-top: 5%;
+  clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+  background: linear-gradient(90deg, yellow, orange 30% 50%, #184580 50%, 70%, #173a75 100%);
+  background-size: 205% 100%;
+  background-position: 0 0;
+}
+
+/* Estilos de las estrellas al pasar el ratón sobre ellas */
+label:hover:before {
+  transition: all 0.25s ease 0s;		
+}
+
+/* Estilos de las estrellas seleccionadas */
+input:checked + label ~ label:before {
+  background-position: 100% 0;
+  transition: all 0.25s ease 0s;	
+}
+
+/* Estilos de las estrellas seleccionadas al pasar el ratón sobre ellas */
+input:checked + label ~ label:hover:before {
+  background-position: 0% 0
+}
+
+/* Actualiza el contador de calificación según la estrella seleccionada */
+#rs1:checked ~ .rating-counter:before {
+  content: "1";
+}
+#rs2:checked ~ .rating-counter:before {
+  content: "2";
+}
+#rs3:checked ~ .rating-counter:before {
+  content: "3";
+}
+#rs4:checked ~ .rating-counter:before {
+  content: "4";
+}
+#rs5:checked ~ .rating-counter:before {
+  content: "5";
+}
+
+/* Estilos del contador de calificación cuando se selecciona una estrella */
+label + input:checked ~ .rating-counter:before {
+  color: #ffab00 !important;
+  transition: all 0.25s ease 0s;
+}
+
+/* Estilos del contador de calificación al pasar el ratón sobre las estrellas */
+label:hover ~ .rating-counter:before {
+  color: #9aacc6 !important;
+  transition: all 0.5s ease 0s;	
+  animation: pulse 1s ease 0s infinite;
+}
+
+/* Animación de pulso del contador de calificación */
+@keyframes pulse {
+    50% { font-size: 6.25vmin; }
+}
+
+/* Actualiza el contador de calificación al pasar el ratón sobre las estrellas */
+label[for=rs1]:hover ~ .rating-counter:before {
+  content: "1" !important;
+}
+label[for=rs2]:hover ~ .rating-counter:before {
+  content: "2" !important;
+}
+label[for=rs3]:hover ~ .rating-counter:before {
+  content: "3" !important;
+}
+label[for=rs4]:hover ~ .rating-counter:before {
+  content: "4" !important;
+}
+label[for=rs5]:hover ~ .rating-counter:before {
+  content: "5" !important;
+}
+
+/* Estilos del contador de calificación cuando se selecciona una estrella y se pasa el ratón */
+input:checked:hover ~ .rating-counter:before {
+  animation: none !important;
+  color: #ffab00 !important ;
+}
+/*Móviles*/
+@media only screen and (max-width: 768px) {
+  #logo {
+    width: 40%;
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 2;
+    margin-bottom: 20px; /* Modificar el margen inferior del logo */
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  #contenedorGordo {
+    width: 150%;
+    margin-left: 95%;
+    margin-top: 220%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+ article {
+  margin-top: 5%;
+ }
+ #propuesta {
+  margin: 5%;
+ }
+ #comprarJuegoBtn button {
+  font-size: medium;
+ }
+ 
+ footer {
+  position: relative;
+  margin-top: 500%; /* Altura del footer */
+  width: 100%;
+  height: 50px; /* Altura del footer */
+  text-align: center; /* Centrar contenido del footer */
+  padding-top: 60px; /* Espacio interno superior del footer */
+  left: 0px;
+  right: 0;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #mi_flex div {
+    width: 45%;
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  #texto{
+      margin-top: 3%;
+  }
+  #enunciado{
+      gap: 4px;
+  }
+  article {
+      margin-top: -25px;
+  }
+  #propuesta {
+      line-height: 1.5;
+
+      margin-top: 7%;
+      margin-bottom: 5%;
+  }
+}
