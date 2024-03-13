@@ -1,6 +1,6 @@
 /* Estilo general */
 body {
-  background-image: url('FondoVentas.jpg');
+  background-image: url('../Multimedia/FondoVentas.jpg');
   background-size: cover;
   color: white;
   text-align: justify;
@@ -16,7 +16,7 @@ body {
 #logo {
   width: 60%;
   position: absolute; /* Añadimos posición absoluta */
-  left: 20px; /* Ajustamos la posición izquierda */
+  left: 85px; /* Ajustamos la posición izquierda */
   z-index: 1; /* Aseguramos que el logo esté sobre otros elementos */
 }
 #contenedorGordo{
@@ -57,8 +57,8 @@ body {
     width: 80%; /* Ajusta el ancho del contenido principal */
   }
   #fotopubli{
-    margin-left: 300px;
-    margin-top: -350px;
+    margin-left: 870px;
+    margin-top: 300px;
   }
   .descripcion {
     margin-bottom: 20px;
@@ -303,8 +303,8 @@ input:checked:hover ~ .rating-counter:before {
 
   #contenedorGordo {
     width: 150%;
-    margin-left: 95%;
-    margin-top: 220%;
+    margin-left: 160%;
+    margin-top: 140%;
     flex-direction: column;
     align-items: center;
     gap: 30px;
@@ -329,10 +329,7 @@ input:checked:hover ~ .rating-counter:before {
   left: 0px;
   right: 0;
 }
-
-
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #mi_flex div {
     width: 45%;
