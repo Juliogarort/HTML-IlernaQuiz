@@ -3,12 +3,15 @@
 
 <head>
     <title id="titulo">ILERNAQUIZ</title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="../Multimedia/LogoTrivia.png">
-    <link rel="stylesheet" href="../Principal/style.css"/>
-    <script src="js.js"></script> <!-- Enlace al archivo JavaScript -->
+    <link rel="icon" type="image/x-icon" href="../Fotos/LogoTrivia.png">
+    <link href="../Principal/style.css" rel="stylesheet" />
+    <!-- <script src="js.js"></script> -->
+    
 </head>
+
+
 <body id="body">
     <nav>
         <div class="navbar">
@@ -23,11 +26,11 @@
               <h1>ILERNAQUIZ</h1>
             </div> -->
             <div class="menu-items">
-              <li><a href="#titulo">IlernaQuiz</a></li>
-              <li><a href="#">En que consiste</a></li>
-              <li><a href="#">Pantallas de juego</a></li>
+              <li><a href="#logo">IlernaQuiz</a></li>
+              <li><a href="#enunciado">En que consiste</a></li>
+              <li><a href="#mi_flex">Pantallas de juego</a></li>
               <li><a href="#comprarJuegoBtn">Compra</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#footer">Contacto</a></li>
             </div>
           </div>
         </div>
@@ -35,10 +38,8 @@
     <div id="contenedor">
         <header>
             <h1>ILERNAQUIZ</h1>
-            <img id="logo" src="../Multimedia/LogoTrivia.png" alt="imagen creative commons">
-
+            <img id="logo" src="../Fotos/LogoTrivia.png" alt="imagen creative commons">
         </header>
-        
         </section>
         <div id="contenedorgordo">
         <article id="articulo">
@@ -61,28 +62,23 @@
 
                 <div id="instrucciones"><h4>Instrucciones</h4>
                     <ul id="lista_instruccines">
-                        <li>Tirar el dado, este determinará la familia de preguntas.</li>
+                        <li>Tirar el dado para mostrar la pregunta</li>
 
-                        <li>Lee la pregunta y selecciona la respuesta correcta. <br>
-                        Si la respuesta es correcta, tira el dado nuevamente.</li>
+                        <li>Intentar seleccionar la respuesta correcta </li>
 
                         <li>El juego continúa hasta que acumules 5 puntos. <br>
                         Si fallas una pregunta, pierdes una vida de las 3 disponibles.</li>
                     </ul>
                 </div>
                 
-
-                <div id="controles"> 
-                    <h4> Uso de controles</h4>
+                <div id="controles"> <h4> Uso de controles</h4>
                     <ul id="lista_controles">
-                    <p>Boton instrucciones: nos lleva a una pantalla en la que podemos observar las instrucciones del juego.</p>
-                    <p>Boton tirar dado: se tira el dado y comenzamos a jugar.</p>
+                    <li>Boton instrucciones: nos lleva a una pantalla en la que podemos observar las instrucciones del juego.</li>
+                    <li>Boton tirar dado: se tira el dado y comenzamos a jugar.</li>
                     </ul>
                 </div>
-
-                
             </div>
-                
+     
         <div id="propuesta"> 
             <h1>HISTORIA DEL JUEGO</h1> <br><br>
 
@@ -96,17 +92,17 @@
             de concurso con diferentes rondas y niveles de dificultad. </h5> <br>
             
             
-            <h5>El diseño de la página web estará orientado a ser intuitivo y accesible para todos, permitiendo que usuarios de todo el mundo se 
+           <h5> El diseño de la página web estará orientado a ser intuitivo y accesible para todos, permitiendo que usuarios de todo el mundo se 
             beneficien de los recursos educativos y creativos disponibles. Además, al proporcionar una fuente de contenido libre y abierto, 
             la página web contribuirá a la difusión del conocimiento y fomentará la innovación y la colaboración en un entorno global.  
-            </h5>
+        </h5>
         </div>
-        <a id="comprarJuegoBtn" href="../Principal/vender.html">
+        <a id="comprarJuegoBtn" href="vender.html">
             <button> <b>Comprar Juego</b> </button>
         </a>    
     </div>
 </article>
-        <footer>
+        <footer id="footer">
             <p>©Copyright Ilerna</p>
             <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Acceso Universal</span>
                  by <span property="cc:attributionName">Julio García y Alberto Bernal</span> is marked with <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" 
@@ -114,11 +110,15 @@
                  src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
                  src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
                 <div id="rrss">
-                    <img id="logo_rrss" src="../Multimedia/insta.webp" alt="logo instagram">
-                    <img id="logo_rrss" src="../Multimedia/facebook.png" alt="logo instagram">
+                    <img id="logo_rrss" src="../Fotos/insta.webp" alt="logo instagram">
+                    <img id="logo_rrss" src="../Fotos/facebook.png" alt="logo instagram">
                 </div>
-                <p>Telefono de contacto</p>
-
+                <div id="btn_contacto">
+                    <a id="formulario_btn" href="contacto.html">
+                        <button> <b>Contacta con nosotros</b> </button>
+                    </a> 
+                </div>
+                <p>Telefono de contacto: 954 04 12 12</p>
         </footer>
     </div>
 </body>
